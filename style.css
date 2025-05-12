@@ -8,6 +8,10 @@
   font-optical-sizing: auto;
 
 }
+.trainone {
+  font-family: "Train One", system-ui;
+  font-style: normal;
+}
 
 
 
@@ -32,4 +36,13 @@
     background-position: center;
     background-size: cover;
 }
+.blogBg{
 
+}
+.promobg{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0.73)),
+    url(./img/Group\ 18373.png);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
