@@ -1,0 +1,35 @@
+/* fonts */
+.inter {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+
+}
+
+
+
+.imgBG{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0.73)),
+    url(./img/heroBG.png);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.serviceBG{
+    background-image: linear-gradient(rgba(217, 217, 217, 0.83), rgba(217, 217, 217, 0.83)),
+    url(./img/servicebg.png);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.cardBg{
+    background-image: linear-gradient(rgba(23, 23, 23, 0.73), rgba(23, 23, 23, 0.73)),
+    url(./img/Rectangle\ 459.png);
+    min-height: auto;
+    background-position: center;
+    background-size: cover;
+}
+
