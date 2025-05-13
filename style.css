@@ -46,3 +46,10 @@
     background-position: center;
     background-size: cover;
 }
+.contactBg{
+    background-image: linear-gradient(rgba(23, 23, 23, 0.73), rgba(23, 23, 23, 0.73)),
+    url(./img/Rectangle\ 262.png);
+    min-height: auto;
+    background-position: center;
+    background-size: cover;
+}
