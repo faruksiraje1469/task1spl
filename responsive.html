@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/2f01c477f1.js" crossorigin="anonymous"></script>
+    <!-- DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+</head>
+<body class="font-sans bg-gray-100">
+    <!-- Navbar -->
+    <section class="mt-4 max-w-7xl mx-auto bg-white">
+        <nav class="flex items-center justify-between px-4">
+            <div class="text-lg flex gap-1 font-semibold">
+                <img class="mt-1 h-8" src="./img/logo.png" alt="Plan Mark Logo">
+                <span>Plan Mark</span>
+            </div>
+            <!-- Hamburger Checkbox -->
+            <input type="checkbox" id="menu-toggle" class="hidden peer">
+            <label for="menu-toggle" class="md:hidden cursor-pointer">
+                <i class="fas fa-bars text-2xl"></i>
+            </label>
+            <!-- Menu -->
+            <div class="hidden peer-checked:flex md:flex flex-col md:flex-row absolute md:static top-16 left-0 w-full md:w-auto bg-white md:bg-transparent z-10">
+                <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 p-4 md:p-0 font-medium text-[16px]">
+                    <li><a href="#" class="text-[#f18c39] relative group">Home <span class="absolute w-full h-0.5 bg-[#B68053] scale-x-0 group-hover:scale-x-100 transition-transform"></span></a></li>
+                    <li><a href="#" class="hover:text-[#f18c39] relative group">About <span class="absolute w-full h-0.5 bg-[#f18c39] scale-x-0 group-hover:scale-x-100 transition-transform"></span></a></li>
+                    <li><a href="#" class="hover:text-[#f18c39] relative group">Services <span class="absolute w-full h-0.5 bg-[#f18c39] scale-x-0 group-hover:scale-x-100 transition-transform"></span></a></li>
+                    <li><a href="contact.html" class="hover:text-[#f18c39] relative group">Contact <span class="absolute w-full h-0.5 bg-[#f18c39] scale-x-0 group-hover:scale-x-100 transition-transform"></span></a></li>
+                    <li class="md:hidden"><button class="text-black font-semibold text-sm border border-orange-500 px-4 py-2 rounded hover:bg-[#f18c39] hover:text-white transition duration-300 w-full text-left">Contact Us</button></li>
+                </ul>
+            </div>
+            <div class="hidden md:block">
+                <button class="text-black font-semibold text-sm border border-orange-500 px-4 py-2 rounded hover:bg-[#f18c39] hover:text-white transition duration-300">
+                    Contact Us
+                </button>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center max-w-7xl mx-auto h-auto" style="background-image: url('./img/hero-bg.jpg')">
+        <div class="px-4 py-8 md:py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="flex flex-col justify-center items-start text-white mt-8 md:mt-20">
+                    <h1 class="font-bold text-3xl md:text-5xl lg:text-6xl">Architecture Design <br> DreamBuildings</h1>
+                    <p class="mt-5 text-sm md:text-base">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which</p>
+                    <div class="mt-5 flex space-x-4">
+                        <button class="bg-[#ECA76E] text-sm px-4 py-2 text-white">Explore Now</button>
+                        <button class="text-white font-light text-base"><i class="fa-solid fa-circle-play"></i> Watch Video</button>
+                    </div>
+                </div>
+                <div class="relative flex justify-center items-center mt-8 md:mt-20">
+                    <div class="bg-[#ECA76E] h-64 md:h-96 w-48 md:w-64 absolute left-1/2 transform -translate-x-1/2 md:left-auto md:translate-x-0"></div>
+                    <img class="relative z-10 w-full max-w-xs md:max-w-sm" src="./img/heroimg.png" alt="Hero Image">
+                </div>
+            </div>
+            <div class="flex space-x-3 justify-center items-center mt-10">
+                <button class="bg-orange-500 w-12 p-2 text-white"><i class="fa-solid fa-arrow-right"></i></button>
+                <button class="bg-orange-500 w-12 p-2 text-white"><i class="fa-solid fa-arrow-left"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="max-w-7xl mx-auto bg-white py-8 md:py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 md:mt-20">
+                <div>
+                    <img class="w-full mb-1" src="./img/Rectangle 450.png" alt="">
+                    <img class="w-full" src="./img/Rectangle 453.png" alt="">
+                </div>
+                <div class="relative">
+                    <div class="bg-[#ECA76E] h-64 md:h-96 w-48 md:w-64 absolute left-4 md:left-14 bottom-2"></div>
+                    <img class="relative w-full" src="./img/Rectangle 452.png" alt="">
+                </div>
+            </div>
+            <div class="flex flex-col justify-center mt-8 md:mt-20 space-y-5">
+                <h3 class="text-[#f18c39] text-lg md:text-xl font-semibold">About Us</h3>
+                <h1 class="text-black font-bold text-2xl md:text-4xl">We’re Experienced in This <br> Field</h1>
+                <p class="text-gray-400 text-sm md:text-base">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which</p>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
+                    <div>
+                        <h3 class="font-bold text-xl md:text-2xl text-[#f18c39]">13+</h3>
+                        <p class="mt-1 font-semibold text-sm">Years of Experience</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-xl md:text-2xl text-[#f18c39]">267+</h3>
+                        <p class="mt-1 font-semibold text-sm">Completed Projects</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-xl md:text-2xl text-[#f18c39]">40+</h3>
+                        <p class="mt-1 font-semibold text-sm">Best Partner</p>
+                    </div>
+                </div>
+                <button class="mt-5 px-4 py-2 rounded bg-[#f18c39] text-white hover:text-black font-semibold">Read More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Section -->
+    <section class="max-w-7xl mx-auto mt-8 md:mt-20 bg-gray-200 py-8">
+        <div class="px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="rounded-xl text-start h-auto w-full mt-8 md:mt-20 space-y-4">
+                    <h1 class="mt-6 text-2xl md:text-4xl font-bold text-black">Services <br>Provided By Us</h1>
+                    <p class="text-[#101010A8] text-sm md:text-base">There are many variations of passages of Lorem Ipsum</p>
+                    <button class="bg-[#ECA76E] text-sm px-4 py-2 text-white">Learn More</button>
+                </div>
+                <div class="bg-[#1B1B1B] rounded-xl text-center h-auto w-full mt-8 space-y-6">
+                    <div class="w-full mt-6"><img class="mx-auto w-16" src="./img/architecture.png" alt=""></div>
+                    <h1 class="text-xl md:text-2xl text-white font-bold">Architecture</h1>
+                    <p class="text-[#FFFFFFFA] text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in so</p>
+                    <button class="text-[#ECA76E]">Learn More <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div class="bg-white rounded-xl text-center h-auto w-full mt-8 space-y-6">
+                    <div class="w-full mt-6"><img class="mx-auto w-16" src="./img/Professional Deign.png" alt=""></div>
+                    <h1 class="text-xl md:text-2xl text-black font-bold">Professional Deign</h1>
+                    <p class="text-[#000000A8] text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in so</p>
+                    <button class="text-[#ECA76E]">Learn More <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div class="bg-white rounded-xl text-center h-auto w-full mt-8 space-y-6">
+                    <div class="w-full mt-6"><img class="mx-auto w-16" src="./img/exterior Design.png" alt=""></div>
+                    <h1 class="text-xl md:text-2xl text-black font-bold">Exterior Design</h1>
+                    <p class="text-[#000000A8] text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in so</p>
+                    <button class="text-[#ECA76E]">Learn More <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div class="bg-white rounded-xl text-center h-auto w-full mt-8 space-y-6">
+                    <div class="w-full mt-6"><img class="mx-auto w-16" src="./img/Interior Design.png" alt=""></div>
+                    <h1 class="text-xl md:text-2xl text-black font-bold">Interior Design</h1>
+                    <p class="text-[#000000A8] text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in so</p>
+                    <button class="text-[#ECA76E]">Learn More <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div class="bg-white rounded-xl text-center h-auto w-full mt-8 space-y-6 mb-8">
+                    <div class="w-full mt-6"><img class="mx-auto w-16" src="./img/Perfect Planning.png" alt=""></div>
+                    <h1 class="text-xl md:text-2xl text-black font-bold">Perfect Planning</h1>
+                    <p class="text-[#000000A8] text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in so</p>
+                    <button class="text-[#ECA76E]">Learn More <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Section -->
+    <section class="max-w-7xl mx-auto mt-8 md:mt-20 bg-white py-8">
+        <div class="text-center">
+            <h1 class="uppercase text-2xl md:text-3xl">We Work With Top <span class="text-[#82631C]">Clients</span></h1>
+            <p class="mt-3">Partners</p>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mt-10">
+                <div class="flex justify-center items-center"><img class="h-10" src="./img/printer1.png" alt="">EBOX</div>
+                <div class="flex justify-center items-center"><img class="h-10" src="./img/home.png" alt=""><span class="ml-2 font-semibold">House Green</span></div>
+                <div class="flex justify-center items-center"><img class="h-10" src="./img/nostrud.png" alt=""></div>
+                <div class="flex justify-center items-center"><img class="h-10" src="./img/home.png" alt=""><span class="ml-2 font-semibold">House Logo</span></div>
+                <div class="flex justify-center items-center"><img class="h-10" src="./img/luxury.png" alt=""><span class="ml-2 font-semibold">Room Decor</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Project Section -->
+    <section class="max-w-7xl mx-auto mt-8 md:mt-28 px-4">
+        <h1 class="text-2xl md:text-4xl text-black font-semibold mb-5">Our Featured Project</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="row-span-2">
+                <img src="./img/1.png" alt="Building" class="w-full h-full object-cover rounded-lg">
+            </div>
+            <div><img src="./img/Rectangle 248.png" alt="" class="w-full h-full object-cover"></div>
+            <div><img src="./img/Rectangle 249.png" alt="" class="w-full h-full object-cover"></div>
+            <div><img src="./img/Rectangle 188.png" alt="" class="w-full h-full object-cover"></div>
+            <div><img src="./img/Mask group.png" alt="" class="w-full h-full object-cover"></div>
+        </div>
+    </section>
+
+    <!-- Work Process Section -->
+    <section class="max-w-7xl mx-auto mt-8 md:mt-28 bg-white py-8">
+        <h1 class="text-2xl md:text-4xl text-black font-semibold px-4">Our Work Process</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 px-4">
+            <div class="shadow-xl text-center h-auto w-full mt-8 space-y-6 mb-8">
+                <div class="w-full mt-6"><img class="mx-auto w-16" src="./img/Group 18402.png" alt=""></div>
+                <h1 class="text-xl md:text-2xl text-black font-bold">Strategy and Planning</h1>
+                <p class="text-[#000000A8] text-sm">The lower-numbered purposes are better understood and practiced</p>
+                <button class="text-[#ECA76E]">Learn More <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="shadow-xl text-center h-auto w-full mt-8 space-y-6 mb-8">
+                <div class="w-full mt-6"><img class="mx-auto w-16" src="./img/Group 18407.png" alt=""></div>
+                <h1 class="text-xl md:text-2xl text-black font-bold">Market Research</h1>
+                <p class="text-[#000000A8] text-sm">The lower-numbered purposes are better understood and practiced</p>
+                <button class="text-[#ECA76E]">Learn More <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="shadow-xl text-center h-auto w-full mt-8 space-y-6 mb-8">
+                <div class="w-full mt-6"><img class="mx-auto w-16" src="./img/Group 18408.png" alt=""></div>
+                <h1 class="text-xl md:text-2xl text-black font-bold">Perfect Planning</h1>
+                <p class="text-[#000000A8] text-sm">The lower-numbered purposes are better understood and practiced</p>
+                <button class="text-[#ECA76E]">Learn More <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="max-w-7xl mx-auto mt-8 md:mt-28 bg-[#FCEFE4] py-8">
+        <div class="text-center">
+            <h1 class="text-2xl md:text-3xl text-black font-bold"><span class="text-[#ECA76E] text-sm font-normal block mb-3">Our Blog</span>Recent Article</h1>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-4">
+            <div>
+                <img src="./img/Rectangle 336.png" alt="" class="w-full">
+                <div class="flex justify-between text-xs mt-2 p-1">
+                    <p>Oct 15, 2023</p>
+                    <p>By: Architecture</p>
+                </div>
+                <h3 class="mt-2 p-1 font-semibold text-sm">An introductory For Selecting The Perfect Color Palette</h3>
+                <button class="mt-4 ml cancel-1 rounded-sm text-white font-medium px-3 py-1 bg-[#ECA76E] text-xs-dot">View All</button>
+            </div>
+            <div>
+                <img src="./img/3.png" alt="" class="w-full">
+                <div class="flex justify-between text-xs mt-2 p-1">
+                    <p>Oct 15, 2023</p>
+                    <p>By: Architecture</p>
+                </div>
+                <h3 class="mt-2 p-1 font-semibold text-sm">An introductory For Selecting The Perfect Color Palette</h3>
+                <button class="mt-4 ml-1 rounded-sm border border-black px-3 py-1 text-xs">View All</button>
+            </div>
+            <div>
+                <img src="./img/10.png" alt="" class="w-full">
+                <div class="flex justify-between text-xs mt-2 p-1">
+                    <p>Oct 15, 2023</p>
+                    <p>By: Architecture</p>
+                </div>
+                <h3 class="mt-2 p-1 font-semibold text-sm">An introductory For Selecting The Perfect Color Palette</h3>
+                <button class="mt-4 ml-1 rounded-sm border border-black px-3 py-1 text-xs">View All</button>
+            </div>
+            <div>
+                <img src="./img/5.png" alt="" class="w-full">
+                <div class="flex justify-between text-xs mt-2 p-1">
+                    <p>Oct 15, 2023</p>
+                    <p>By: Architecture</p>
+                </div>
+                <h3 class="mt-2 p-1 font-semibold text-sm">An introductory For Selecting The Perfect Color Palette</h3>
+                <button class="mt-4 ml-1 rounded-sm border border-black px-3 py-1 text-xs">View All</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="max-w-7xl mx-auto mt-8 md:mt-28 py-8">
+        <div class="text-center">
+            <h1 class="text-2xl md:text-3xl text-black font-bold"><span class="text-[#ECA76E] text-sm font-normal block mb-3">Our Team</span>Meet Our Expert</h1>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-4">
+            <div>
+                <img src="./img/Rectangle 227.png" alt="" class="w-full">
+                <h3 class="text-black text-center mt-4 font-semibold text-lg md:text-xl">Ronald Richards</h3>
+                <p class="text-center text-sm">Web Designer</p>
+            </div>
+            <div>
+                <img src="./img/Rectangle 228.png" alt="" class="w-full">
+                <h3 class="text-black text-center mt-4 font-semibold text-lg md:text-xl">Jerome Bell</h3>
+                <p class="text-center text-sm">UI/UX Designer</p>
+            </div>
+            <div>
+                <img src="./img/Rectangle 230.png" alt="" class="w-full">
+                <h3 class="text-black text-center mt-4 font-semibold text-lg md:text-xl">Darrell Steward</h3>
+                <p class="text-center text-sm">Development</p>
+            </div>
+            <div>
+                <img src="./img/Rectangle 231.png" alt="" class="w-full">
+                <h3 class="text-black text-center mt-4 font-semibold text-lg md:text-xl">Joseph Benjami</h3>
+                <p class="text-center text-sm">Project Manager</p>
+            </div>
+        </div>
+        <div class="text-center mt-8">
+            <button class="rounded-sm text-white font-medium text-base px-6 py-3 bg-[#ECA76E]">View All</button>
+        </div>
+    </section>
+
+    <!-- Promo Video Section -->
+    <section class="max-w-7xl mx-auto mt-8 md:mt-28 bg-[#FCEFE4] bg-cover bg-center py-8" style="background-image: url('./img/promo-bg.jpg')">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
+            <div class="flex flex-col justify-center mt-8 md:mt-32 space-y-5">
+                <p class="text-[#ECA76E] text-sm">PROMO VIDEO</p>
+                <h1 class="text-white font-bold text-2xl md:text-4xl">Ensuring a safe experience <br> from design to installation</h1>
+                <p class="text-[#FFFFFFB3] text-sm">Nurani Interior possesses vast experience in the Interior Design industry having a large technical resource of Interior Designers, Architects, Electrical & Civil Engineers. We are also privileged to develop some significant interior projects since 2010.</p>
+                <button class="rounded-sm text-white font-medium text-base px-6 py-3 bg-[#ECA76E]">More Videos <i class="fa-solid fa-play"></i></button>
+            </div>
+            <div class="flex justify-center items-center mt-8 md:mt-32 relative">
+                <img src="./img/Untitled7.png" alt="" class="w-full max-w-md">
+                <i class="fa-regular fa-circle-play text-black absolute text-4xl"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Section -->
+    <section class="max-w-7xl mx-auto mt-8 md:mt-28 bg-white py-8">
+        <div class="text-center font-semibold text-2xl md:text-4xl">
+            <h1><span class="text-[#ECA76E]">What Clients</span> Are Saying</h1>
+        </div>
+        <div class="carousel w-full mt-10 px-4">
+            <div id="slide1" class="carousel-item relative w-full">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="shadow-xl text-center h-auto w-full mt-8 space-y-4 mb-8">
+                        <div><img class="mx-auto bg-slate-400 rounded-full w-16" src="./img/Health-5 1 (1).png" alt=""></div>
+                        <h1 class="text-lg text-black font-bold">James Pattinson</h1>
+                        <p class="text-[#000000A8] text-sm p-3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alter to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                        <div>
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <i class="fa-solid fa-star text-gray-500"></i>
+                        </div>
+                    </div>
+                    <div class="shadow-xl text-center h-auto w-full mt-8 space-y-4 mb-8">
+                        <div><img class="mx-auto bg-slate-400 rounded-full w-16" src="./img/Health-5 1.png" alt=""></div>
+                        <h1 class="text-lg text-black font-bold">Greg Stuart</h1>
+                        <p class="text-[#000000A8] text-sm p-3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alter to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                        <div>
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <i class="fa-solid fa-star-half-stroke text-yellow-400"></i>
+                            <i class="fa-solid fa-star text-gray-500"></i>
+                        </div>
+                    </div>
+                    <div class="shadow-xl text-center h-auto w-full mt-8 space-y-4 mb-8">
+                        <div><img class="mx-auto bg-slate-400 rounded-full w-16" src="./img/Health-5 1 (1).png" alt=""></div>
+                        <h1 class="text-lg text-black font-bold">James Pattinson</h1>
+                        <p class="text-[#000000A8] text-sm p-3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alter to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                        <div>
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <i class="fa-solid fa-star text-gray-500"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get In Touch Section -->
+    <section class="max-w-7xl mx-auto mt-8 md:mt-28 py-8 px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+                <h1 class="text-2xl md:text-4xl font-bold">Get In <span class="text-[#ECA76E]">Touch</span></h1>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+                    <div class="bg-white shadow-xl h-auto w-full p-6 space-y-2">
+                        <h2 class="text-xl font-semibold text-[#ECA76E] mt-4">Contact Us</h2>
+                        <p class="mt-4"><i class="fa-solid fa-phone"></i> 019 delegate-611696</p>
+                        <p><i class="fa-solid fa-envelope"></i> faruksiraje@gmail.com</p>
+                    </div>
+                    <div class="bg-white shadow-xl h-auto w-full p-6 space-y-2">
+                        <h2 class="text-xl font-semibold text-[#ECA76E] mt-4">Our Hours</h2>
+                        <p class="mt-4">We Are Open SAT-THUR 08:30 - 05:00 (GMT 6+)</p>
+                    </div>
+                    <div class="bg-white shadow-xl h-auto w-full p-6 space-y-2">
+                        <h2 class="text-xl font-semibold text-[#ECA76E] mt-4">Location</h2>
+                        <p class="mt-4">89/7 Gopibag, Dhaka 1203, Bangladesh</p>
+                    </div>
+                    <div class="bg-white shadow-xl h-auto w-full p-6 space-y-2">
+                        <h2 class="text-xl font-semibold text-[#ECA76E] mt-4">Social</h2>
+                        <div class="flex justify-around mt-4">
+                            <i class="bg-gray-200 rounded-full p-2 fa-brands fa-facebook text-black"></i>
+                            <i class="bg-gray-200 rounded-full p-2 fa-brands fa-instagram text-black"></i>
+                            <i class="bg-gray-200 rounded-full p-2 fa-brands fa-twitter text-black"></i>
+                            <i class="bg-gray-200 rounded-full p-2 fa-brands fa-linkedin text-black"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#1B1B1B] text-white h-auto rounded-lg p-6">
+                <h1 class="text-xl md:text-2xl font-semibold">Got Ideas? We’ve Got The Skills <br> Let’s Work Together.</h1>
+                <div class="mt-6">
+                    <form action="">
+                        <input type="text" class="w-full mt-4 bg-transparent border-b border-gray-500 focus:outline-none text-white placeholder-gray-400" placeholder="Your Full Name" required>
+                        <input type="email" class="w-full mt-4 bg-transparent border-b border-gray-500 focus:outline-none text-white placeholder-gray-400" placeholder="Your Email" required>
+                        <textarea class="w-full mt-4 bg-transparent border-b border-gray-500 focus:outline-none text-white placeholder-gray-400" placeholder="Tell Us About You" required></textarea>
+                    </form>
+                    <div class="text-center mt-8">
+                        <button class="w-full rounded-sm text-white font-medium text-base px-6 py-3 bg-[#ECA76E] hover:bg-[#f18c39]">Let’s Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Service Section -->
+    <section class="bg-[#ECA76E] text-center h-auto w-full mt-8 md:mt-28 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 justify-center items-center px-4">
+            <div>
+                <img class="w-full" src="./img/Rectangle 461.png" alt="">
+            </div>
+            <div>
+                <h1 class="text-white font-bold text-xl md:text-2xl">Looking For The Best <br> Architecture Services</h1>
+            </div>
+            <div>
+                <button class="bg-white px-5 py-2 text-base text-[#f18c39] font-semibold rounded-xl hover:bg-[#f18c39] hover:text-white">Submit Request</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="bg-black text-white py-8">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-4">
+            <div class="mt-8">
+                <h1 class="flex items-center"><img class="mr-2 h-8" src="./img/logo.png" alt=""> Plan Mark</h1>
+                <p class="mt-3 text-sm">There are many variations of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                <p class="mt-3 text-sm">Follow Us:</p>
+                <div class="flex justify-around mt-3">
+                    <i class="bg-gray-200 rounded-full p-2 fa-brands fa-facebook text-black"></i>
+                    <i class="bg-gray-200 rounded-full p-2 fa-brands fa-instagram text-black"></i>
+                    <i class="bg-gray-200 rounded-full p-2 fa-brands fa-twitter text-black"></i>
+                    <i class="bg-gray-200 rounded-full p-2 fa-brands fa-linkedin text-black"></i>
+                </div>
+            </div>
+            <div class="mt-8">
+                <h2 class="text-lg mb-4">Categories</h2>
+                <p class="text-sm"><i class="fa-solid fa-circle text-[5px] mr-2"></i> About Us</p>
+                <p class="text-sm"><i class="fa-solid fa-circle text-[5px] mr-2"></i> Services</p>
+                <p class="text-sm"><i class="fa-solid fa-circle text-[5px] mr-2"></i> Portfolio</p>
+                <p class="text-sm"><i class="fa-solid fa-circle text-[5px] mr-2"></i> Blog</p>
+                <p class="text-sm"><i class="fa-solid fa-circle text-[5px] mr-2"></i> Contact Us</p>
+            </div>
+            <div class="mt-8">
+                <h2 class="text-lg mb-4">Our Services</h2>
+                <p class="text-sm"><i class="fa-solid fa-circle text-[5px] mr-2"></i> Interior Design</p>
+                <p class="text-sm"><i class="fa-solid fa-circle text-[5px] mr-2"></i> Home Remodeling</p>
+                <p class="text-sm"><i class="fa-solid fa-circle text-[5px] mr-2"></i> Architecture Design</p>
+                <p class="text-sm"><i class="fa-solid fa-circle text-[5px] mr-2"></i> Office Renovation</p>
+                <p class="text-sm"><i class="fa-solid fa-circle text-[5px] mr-2"></i> Perfect Planning</p>
+            </div>
+            <div class="mt-8 space-y-4">
+                <h2 class="text-lg mb-4">Office Information</h2>
+                <p class="text-sm"><i class="mr-2 fa-solid fa-location-dot"></i> 89/7 Gopibag, Dhaka 1203, Bangladesh</p>
+                <p class="text-sm"><i class="mr-2 fa-solid fa-phone"></i> 01962-611696</p>
+                <p class="text-sm"><i class="mr-2 fa-solid fa-envelope"></i> faruksiraje@gmail.com</p>
+            </div>
+        </div>
+        <div class="text-center mt-8 text-sm">
+            <p>Copyright ©2025. All Rights Reserved.</p>
+        </div>
+    </section>
+</body>
+</html>
