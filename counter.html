@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Counter Animation</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 2000px; /* Tall page to enable scrolling */
+        }
+        .spacer {
+            height: 800px; /* Space before counters for scrolling */
+            text-align: center;
+            padding-top: 50px;
+        }
+        .counters {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            padding: 50px;
+            background: #f0f0f0;
+        }
+        .counters span {
+            font-size: 48px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="spacer">Scroll down to see the counters...</div>
+    <div class="counters">
+        <span data-count="100">0</span>
+        <span data-count="500">0</span>
+        <span data-count="1000">0</span>
+    </div>
+    <div class="spacer">Scroll up to reset the counters...</div>
+
+    <script>
+        const counters = document.querySelectorAll(".counters span");
+        const container = document.querySelector(".counters");
+        let activated = false;
+
+        window.addEventListener("scroll", () => {
+            if (
+                window.pageYOffset > container.offsetTop - container.offsetHeight - 200 &&
+                !activated
+            ) {
+                counters.forEach((span) => {
+                    span.textContent = "0"; // Initialize to 0
+                    const count = parseInt(span.dataset.count, 10);
+                    let currentCount = 0;
+                    // Adjust increment for ~2-second animation (2000ms / 50ms = 40 steps)
+                    const increment = Math.ceil(count / (2000 / 50));
+                    const intervalTime = 50; // Update every 50ms
+
+                    const interval = setInterval(() => {
+                        currentCount += increment;
+                        if (currentCount >= count) {
+                            currentCount = count; // Cap at target
+                            clearInterval(interval); // Stop interval
+                        }
+                        span.textContent = currentCount;
+                    }, intervalTime);
+                });
+                activated = true;
+            } else if (
+                window.pageYOffset < container.offsetTop - container.offsetHeight - 500 &&
+                activated
+            ) {
+                counters.forEach((span) => {
+                    span.textContent = "0"; // Reset to 0
+                });
+                activated = false; // Allow future animation
+            }
+        });
+    </script>
+</body>
+</html>
