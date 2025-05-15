@@ -17,7 +17,7 @@
 
 
 
-.imgBG {
+.heroBG {
   background-image: linear-gradient(rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0.73)),
     url(./img/heroBG.png);
   min-height: 100vh;
@@ -43,9 +43,9 @@
 
 .blogBg {
   background-image: url(./img/Blog.png);
-
   background-position: center;
   background-size: cover;
+  position: relative;;
 
 
 }

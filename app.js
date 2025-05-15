@@ -99,7 +99,7 @@
                     let currentCount = 0;
                     // Adjust increment for ~2-second animation (2000ms / 50ms = 40 steps)
                     const increment = Math.ceil(count / (2000 / 50));
-                    const intervalTime = 30; // Update every 50ms
+                    const intervalTime = 100; // Update every 50ms
 
                     const interval = setInterval(() => {
                         currentCount += increment;
@@ -123,8 +123,14 @@
         });
 
 
+   
 
-        // slider...........
+
+        
+
+
+
+        // slider method 1...........
     
         const slider = document.querySelector(".slider");
         const logos = document.querySelectorAll(".client-logo");
@@ -180,5 +186,24 @@
         window.addEventListener("resize", () => {
             updateSlider();
         });
+
+        // slider method 2........
+
+         nextBtn.addEventListener('click', () => {
+        if (currentIndex < clientLogos.length - 1) {
+            currentIndex++;
+            updateSlider();
+        }
+    });
+
+    prevBtn.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateSlider();
+        }
+    });
+
+    window.addEventListener('resize', updateSlider);
+    updateSlider();
     
     
